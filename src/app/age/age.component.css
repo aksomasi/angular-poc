@@ -1,0 +1,14 @@
+.cal-app{
+  width: 30%;
+  background-color: aquamarine;
+  border: solid;
+  border-radius: 20%;
+  text-align: center;
+  padding: 20px;
+}
+.btn-custom{
+  padding-top: 30px;
+}
+table{
+  background-color: black;
+}

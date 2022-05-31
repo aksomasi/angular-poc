@@ -1,0 +1,30 @@
+<div class="container cal-app">
+  <h1>Person's Information</h1>
+  <div class="row">
+    Name : <input type="string" [(ngModel)]="name" [min]="0" [max]="10"> <br>
+    Age : <input type="number" [(ngModel)]="age" [min]="0" [max]="10"> <br>
+  </div>
+  <div class="row btn-custom">
+    <div class="col-3">
+      <button class="btn btn-primary" (click)="save()"> Submit </button>
+    </div>
+     </div>
+
+
+</div>
+
+<table class="table table-dark table-striped">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Status</th>
+  </tr>
+  <tr *ngFor="let person of persons">
+    <td>{{person.name}}</td>
+    <td>{{person.age}}</td>
+    <td *ngIf="calculateAgeStatus(person.age) === 'Major'" style="color: green">
+      {{calculateAgeStatus(person.age)}} </td>
+    <td style="color: red" *ngIf="calculateAgeStatus(person.age) === 'Minor'">
+      {{calculateAgeStatus(person.age)}} </td>
+  </tr>
+ </table>

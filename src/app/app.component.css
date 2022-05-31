@@ -1,0 +1,16 @@
+h1{
+  background-color: blue;
+  color: red;
+}
+
+
+.user_styles{
+  background-color: black;
+  color: red;
+}
+
+.numeric{
+  color: red;
+  background-color: blue;
+  padding: 20px;
+}

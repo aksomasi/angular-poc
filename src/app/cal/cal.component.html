@@ -1,0 +1,13 @@
+<div class="container cal-app">
+  <h1> Calculator </h1>
+  <div class="row">
+    Number1: <input type="number" [(ngModel)]="num1"> <br>
+    Number2: <input type="number" [(ngModel)]="num2"> <br>
+  </div>
+  <h2>Result: </h2> <h1 style="color: mediumvioletred"> {{result}}
+</h1>
+<div class="row">
+<app-cal-result [calResult]="result" [calNum1]="num1" [calNum2]="num2" (resultToParent)="showResult($event)"
+></app-cal-result>
+</div>
+</div>
